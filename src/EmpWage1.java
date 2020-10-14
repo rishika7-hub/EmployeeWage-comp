@@ -1,5 +1,5 @@
 import java.util.*;
-public class EmpWage {
+public class EmpWage1 {
 	
 	public static final int WAGE_PER_HOUR=20;
 	private static final int FULL_DAY_HOUR=8;
@@ -11,8 +11,16 @@ public class EmpWage {
 	public static final int NUM_OF_DAYS_IN_MONTH = 20;
 	public static final int MAX_HRS_IN_MONTH =100;
 
-	public static void main(String[] args) {
+	public static void main(String args[]) {
 				// TODO Auto-generated method stub
+		 {
+
+             EmpWage1 ew=new EmpWage1();
+             ew.empWage();
+     }
+
+
+
 				System.out.println("Welcome to Employee Wage Computation Problem");
 				if (isEmployeePresent()) {
 					System.out.println("Employee is PRESENT");
@@ -52,6 +60,13 @@ public class EmpWage {
 
 			
 
+	private void empWage() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
 	private static int empCheck() {
 		// TODO Auto-generated method stub
 		return 0;
@@ -67,8 +82,8 @@ public class EmpWage {
 		return new Random().nextBoolean();
 	}
 }
-	
-	
+
+
 
 
 	
