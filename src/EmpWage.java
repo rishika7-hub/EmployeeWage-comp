@@ -28,6 +28,8 @@ public class EmpWage {
 				default:
 					break;
 				}
+				empWage= empHrs * WAGE_PER_HOUR;
+				System.out.println("Emp Wage:" +empWage);
 				
 				// Employee Attendance
 				
