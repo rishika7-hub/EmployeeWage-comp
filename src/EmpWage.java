@@ -17,7 +17,10 @@ public class EmpWage {
 
 				int empHrs = 0;
 				int empWage=0;
-				int empCheck = (int) Math.floor(Math.random() * 10 ) % 3;
+				int totalEmpWage = 0;
+				// int empCheck = (int) Math.floor(Math.random() * 10 ) % 3;
+				for (int day=0; day < WORKING_DAYS_PER_MONTH; day++) {
+					int empcheck = (int) Math.floor(Math.random() * 10 ) % 3;
 				
 				switch (empCheck()) {
 				case IS_FULL_TIME: 
@@ -30,20 +33,13 @@ public class EmpWage {
 					break;
 				}
 				empWage= empHrs * WAGE_PER_HOUR;
+				totalEmpWage+=empWage;
 				System.out.println("Emp Wage:" +empWage);
-				
-					int wages = 0;
-					for (int i = 1; i <= WORKING_DAYS_PER_MONTH; i++) {
-						System.out.println("Day #" + i);
-						if (isEmployeePresent()) {
-							System.out.println("Present");
-							wages += DAILY_WAGE;
-						} else {
-							System.out.println("Absent");
-						}
-					}
-					return;
-				}
+				 System.out.println("Total Employee Wage : " + totalEmpWage);
+		    	}
+				System.out.println("Total Employee Wage : " + totalEmpWage);
+		    }
+
 				
 
 	private static int empCheck() {
