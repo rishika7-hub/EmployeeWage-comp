@@ -34,7 +34,7 @@ public class CompanyEmpWage {
 	}
 
 		
-	private boolean isEmployeePresent() {
+	public boolean isEmployeePresent() {
 		// TODO Auto-generated method stub
 		return new Random().nextBoolean();
 	}
